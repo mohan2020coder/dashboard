@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams Dashboard Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+
+            <span> <a href="#">Marcus</a> <i class="fa fa-angle-down"></i> </span>
+            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt=" profile">
+            <ul>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">U23</a></li>
+                <li><a href="#">U19</a></li>
+            </ul>
+
+        </header>
+        <aside class="sidenav" id="navbar">
+            <nav>
+                <h1>Logo</h1>
+                <ul>
+                    <li><i class="fa fa-chart-pie"></i> <a href="#">Dashboard</a></li>
+                    <li><i class="fa fa-building"></i> <a href="#">Tactics Vault</a></li>
+                    <li><i class="fa fa-users"></i> <a href="#">Teams</a></li>
+                    <li><i class="fa fa-clipboard"></i> <a href="#">Schedule Generator</a></li>
+                    <li><i class="fa fa-address-book"></i> <a href="#">Weekly Traning Plans</a></li>
+                    <li><i class="fa fa-file-alt"></i> <a href="#">Team Metrics</a></li>
+                    <li><i class="fa fa-cogs"></i> <a href="#">Customizations</a></li>
+                </ul>
+
+                <div class="bottom-menu">
+                    <h3>Select Your Team</h3>
+                    <div class="dropdown">
+                        <button class="dropbtn">Team Name
+                            <i class="fa fa-caret-up"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+        <main class="main">
+            <button class="button btn-top" id="open">Add New Schedule</button>
+            <input type="text" style="font-family: FontAwesome;" placeholder="&#xf002  Search Your Schedule"
+                name="search">
+            <div class="main-cards">
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span class="primary"><i class="fa fa-angle-up"></i></span>
+                            <span class="red"><i class="fa fa-trash"></i></span>
+                            <span><i class="fa fa-edit"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span><i class="fa fa-arrow-down"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span><i class="fa fa-arrow-down"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span><i class="fa fa-arrow-down"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span><i class="fa fa-arrow-down"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span><i class="fa fa-arrow-down"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="card accordion">
+                    <div class="row">
+                        <div class="col-2">
+                            <h4>Winter Training Schedule</h4>
+                            <h5><span class="week">4 Weeks</span> | <span class="session">12 Sessions</span></h5>
+                        </div>
+                        <div class="col-2">
+                            <span><i class="fa fa-arrow-down"></i></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel clearfix">
+                    <div class="row clearfix">
+                        <div class="col-3">
+                            <h5><span class="session">START DATE</span></h5>
+                            <h4>25 January 2020</h4>
+
+                        </div>
+                        <div class="col-3">
+                            <h5><span class="session">END DATE</span></h5>
+                            <h4>19 February 2020</h4>
+                        </div>
+                        <div class="col-4 update-block">
+                            <button class="button">Update</button>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <ul id="panel-list">
+                            <li><input type="radio"> <b>SUNDAY</b></li>
+                            <li><input type="radio"> <b>MONDAY</b></li>
+                            <li><input type="radio"> <b>TUESDAY</b></li>
+                            <li><input type="radio"> <b>WENDNESDAY</b></li>
+                            <li><input type="radio"> <b>THURSDAY</b></li>
+                            <li><input type="radio"> <b>FRIDAY</b></li>
+                            <li><input type="radio"> <b>SATURDAY</b></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+            &copy; Reserved 2021 by Mohan Raj
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Create New Schedule</h3>
+            </div>
+            <hr>
+            <div class="modal-content">
+                <form class="modal-form">
+                    <div class="row clearfix">
+                        <label for="name">Schedule Name</label>
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input" />
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="row clearfix">
+                        <div class="col-3-modal">
+                            <label for="name">Start Date</label>
+                            <input type="text" id="name" placeholder="Select start date" class="form-input" />
+
+                        </div>
+                        <div class="col-3-modal">
+                            <label for="name">End Date</label>
+                            <input type="text" id="name" placeholder="Select end date" class="form-input" />
+
+                        </div>
+                        <div class="col-3-modal">
+                            <label for="name">Enter No. of weeks</label>
+                            <input type="text" id="name" placeholder="Enter no of weeks" class="form-input" />
+
+                        </div>
+                    </div>
+                    <button class="button close-btn" id="close">
+                        Close
+                    </button>
+                    <button class="button create-btn" id="close">
+                        Create
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const navbar = document.getElementById('navbar');
+
+        const close = document.getElementById('close');
+        const open = document.getElementById('open');
+        const modal = document.getElementById('modal');
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+        // This function closes navbar if user clicks anywhere outside of navbar once it's opened
+        // Does not leave unused event listeners on
+        // It's messy, but it works
+        function closeNavbar(e) {
+            if (
+                document.body.classList.contains('show-nav') &&
+                e.target !== toggle &&
+                !toggle.contains(e.target) &&
+                e.target !== navbar &&
+                !navbar.contains(e.target)
+            ) {
+                document.body.classList.toggle('show-nav');
+                document.body.removeEventListener('click', closeNavbar);
+            } else if (!document.body.classList.contains('show-nav')) {
+                document.body.removeEventListener('click', closeNavbar);
+            }
+        }
+
+        // Toggle nav
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('show-nav');
+            document.body.addEventListener('click', closeNavbar);
+        });
+
+        // Show modal
+        open.addEventListener('click', () => modal.classList.add('show-modal'));
+
+        // Hide modal
+        close.addEventListener('click', () => modal.classList.remove('show-modal'));
+
+        // Hide modal on outside click
+        window.addEventListener('click', e =>
+            e.target == modal ? modal.classList.remove('show-modal') : false
+        );
+
+    </script>
+</body>
+
+</html>
